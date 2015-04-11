@@ -1,0 +1,13 @@
+Idea:
+	Given a Method
+		create a collection for the return type
+		store all returned values and their matching input
+		for each call, return the stored value if it exists
+		
+Idea with details:
+	Given a Method object
+		create a collection for the return type
+			get the list of return types from reflection https://docs.oracle.com/javase/tutorial/reflect/member/methodType.html
+		store all returned values and their matching input
+			Choose storage appropriate to the size of the collection, if possible.
+		for each call, return the stored value if it exists
